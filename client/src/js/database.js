@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 export const putDb = async (content) => {
-  console.log("Post to Database");
+  console.log("POST to Database");
 
   const jateDb = await openDB("jate", 1);
   const tx = jateDb.transaction("jate", "readwrite");
@@ -25,7 +25,7 @@ export const putDb = async (content) => {
 };
 
 export const getDb = async () => {
-  console.log("GET from the database");
+  console.log("GET from Database");
 
   const jateDb = await openDB("jate", 1);
   const tx = jateDb.transaction("jate", "readonly");
